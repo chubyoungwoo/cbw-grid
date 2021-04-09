@@ -1,0 +1,76 @@
+.@{row-prefix-cls} {
+    .make-row();
+    display: block;
+
+    &-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &:before,
+        &:after {
+            display: flex;
+        }
+        // x축 원점
+        &-start {
+            justify-content: flex-start;
+        }
+        // x축센터
+        &-center {
+            justify-content: center;
+        }
+        // x오른쪽
+        &-end {
+            justify-content: flex-end;
+        }
+        // x축 양분
+        &-space-between {
+            justify-content: space-between;
+        }
+        // x축 간격띄우기
+        &-space-around {
+            justify-content: space-around;
+        }
+        // 위쪽정렬
+        &-top {
+            align-items: flex-start;
+        }
+        // 가운데 정렬
+        &-middle {
+            align-items: center;
+        }
+        // 아래정렬
+        &-bottom {
+            align-items: flex-end;
+        }
+    }
+}
+
+.@{col-prefix-cls} {
+    position: relative;
+    display: block;
+}
+
+.make-grid();
+
+.make-grid(-xs);
+
+@media (min-width: @screen-sm-min) {
+    .make-grid(-sm);
+}
+
+@media (min-width: @screen-md-min) {
+    .make-grid(-md);
+}
+
+@media (min-width: @screen-lg-min) {
+    .make-grid(-lg);
+}
+
+@media (min-width: @screen-xl-min) {
+    .make-grid(-xl);
+}
+
+@media (min-width: @screen-xxl-min) {
+    .make-grid(-xxl);
+}

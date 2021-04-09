@@ -1,0 +1,4 @@
+src/directives
+src/utils/throttle.js
+src
+*.js
