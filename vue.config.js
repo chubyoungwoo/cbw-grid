@@ -6,8 +6,8 @@ module.exports = {
     productionSourceMap: false,  //프로덕션에 소스맵이 필요없는경우 속도가 빠르다.
     pages: {
         main: {
-            entry: 'src/index.js',
-            //entry: 'src/main.js',
+            // entry: 'src/index.js',
+            entry: 'src/main.js',
             template: 'public/index.html',
             filename: 'index.html'
         }
